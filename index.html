@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 0ne</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <!-- Sidehustle Task One; create a form -->
+
+    <form onsubmit="myFunction()">
+        <fieldset>
+            <legend>Form 0ne</legend>
+            <div class="input-wrapper">
+                <label for="fullname">Full Name</label><br>
+                <input class="input-box" type="text" name="fullname" id="fullname" required>
+            </div>
+            
+            <div class="input-wrapper">
+                <label for="email">Email</label><br>
+                <input class="input-box" type="email" name="email" id="email" required>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="phonenumber">Phone Number</label><br>
+                <input class="input-box" type="tel" name="phonenumber" id="phonenumber" required maxlength="11">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="sex">Male</label>
+                <input type="radio" name="sex" id="male">
+
+                <label for="sex">Female</label>
+                <input type="radio" name="sex" id="female">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="password">Password</label><br>
+                <input class="input-box" type="password" name="password" id="password" required>
+            </div>
+
+            <div class="input-wrapper">
+                <button class="sub-btn" type="submit" value="submit" >SUBMIT</button>
+            </div>
+        </fieldset>
+    </form>
+    <script>
+        function myFunction() {
+            alert("Form Submitted Successfully");
+        }
+    </script>
+</body>
+</html>
